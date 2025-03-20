@@ -1,33 +1,15 @@
-use std::vec;
 
 fn main() {
-    let x = String::from("Hello, ");
-    let y = String::from("World!");
-    println!("x: {}, y: {}", x, y);
-    let z = x.clone() + y.as_str();
+    // sein x und y die seiten eines rechtwinkligen dreiecks, dann ist z die hypotenuse
+    let x: i32 = 5;
+    let y: i32 = 6;
 
-    for c in 1..50 {
-        println!("c: {}", c);
-    }
+    // z = wurzel aus x quadrat + y quadrat
 
-    let a = vec![1, 2, 3, 4, 5];
-    for i in a.iter() {
-        println!("i: {}", i);
-    }
-    println!("sum: {}", sum(a));
 
-    println!("z: {}", z);
-    println!("x: {}, y: {}", x, y);
-
+    // Hier müsst ihr euren Code einfügen
+    let z:i32 = x + y;
+    
+    println!("{0}, {1} => {2}", x, y, z);
 }
 
-
-
-
-fn sum(a:Vec<i32>) -> i32 {
-    let mut sum = 0;
-    for i in a.iter() {
-        sum += i;
-    }
-    sum
-}
