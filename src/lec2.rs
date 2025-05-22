@@ -44,6 +44,15 @@ pub fn test() {
         vec![1, 7, 3, 0],
     ];
 
+    let mut summe = 0;
+    for zeile in 0..matrix[0].len() {
+        let mut produkt = 1;
+        for liste in &matrix {
+            produkt *= liste[zeile];
+        }
+        summe += produkt;
+    }
+    println!("Summenprodukt: {}", summe);
 
     
 
