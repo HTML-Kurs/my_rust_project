@@ -22,13 +22,23 @@ pub fn test() {
     let mut x:f32 = 0.6;
     let y:f32 = 0.7;
 
-    let z:f32 = addiere(&mut x, y);
+    let mut z:f32 = addiere(&mut x, y);
 
     println!("{}", z);
 
 
     println!("{}", x);
     
+
+    let k = &z;
+
+    println!("{}", k);
+
+    let m: &f32 = &z;
+
+    println!("{}", m);
+
+    k.abs();
 
 
 
